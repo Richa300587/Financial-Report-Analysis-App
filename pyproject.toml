@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Financial_Analysis_Chatbot"
+authors = [
+  { name = "Richa Chaudhary", email = "richautd30@gmail.com" }
+]
+version = "0.1.0"
+description = "This is end to end LLMOps project"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "boto3==1.42.21",
+    "botocore==1.42.21",
+    "certifi==2026.1.4",
+    "dill==0.4.0",
+    "docx2txt==0.9",
+    "faiss-cpu==1.8.0",
+    "fastapi==0.128.0",
+    "from-root==1.3.0",
+    "imbalanced-learn==0.12.3",
+    "ipykernel==7.1.0",
+    "jinja2==3.1.6",
+    "langchain==0.3.23",
+    "langchain-community==0.3.21",
+    "langchain-core==0.3.63",
+    "langchain-openai==0.3.7",
+    "langsmith==0.1.147",
+    "matplotlib==3.8.4",
+    "mypy-boto3-s3==1.42.21",
+    "numpy==1.26.4",
+    "onnxruntime==1.23.1",
+    "openai==1.58.1",
+    "pandas==2.2.3",
+    "plotly==5.22.0",
+    "pymongo==4.15.5",
+    "python-dotenv==1.2.1",
+    "python-multipart==0.0.21",
+    "pyyaml==6.0.3",
+    "scikit-learn==1.5.2",
+    "seaborn==0.13.2",
+    "structlog==25.5.0",
+    "unstructured[pdf]==0.18.24",
+    "uvicorn==0.40.0",
+]
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
